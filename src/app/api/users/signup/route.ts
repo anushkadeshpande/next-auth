@@ -12,7 +12,7 @@ try {
 export async function POST(request: NextRequest) {
   try {
     const reqBody = request.json()
-    const { username, email, password }: any = reqBody
+    const { username, email, password } =await reqBody
 
     // TODO: validation
     console.log(reqBody)
